@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/whoami', (req, res) => {
+app.get('/api/whoami', (req, res) => {
  
 
   var ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
